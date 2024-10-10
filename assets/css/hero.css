@@ -1,0 +1,132 @@
+
+.hero {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero-container {
+    position: relative;
+    width: 85%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    height: 400px; 
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .hero-container {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .hero-image {
+        object-fit: contain; 
+        height: auto; 
+    }
+
+    .hero-slide {
+        height: auto; 
+    }
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 85%; 
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #cccccc; 
+    margin: 0 15px; 
+}
+
+
+.title-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555555; 
+    text-align: center;
+    white-space: nowrap; 
+}
+
+
+@media (max-width: 768px) {
+    .title-container {
+        flex-direction: column; 
+        margin-top: 10px; 
+        margin-bottom: 20px; 
+    }
+
+    .title-line {
+        width: 50px; 
+        margin: 10px 0; 
+    }
+
+    .title-text {
+        font-size: 20px; 
+    }
+}

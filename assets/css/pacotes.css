@@ -1,0 +1,76 @@
+
+.pacotes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px 0;
+    width: 85%; 
+    margin: 0 auto;
+}
+
+
+.pacote {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pacote img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pacote-info {
+    padding: 15px;
+}
+
+
+.pacote h3 {
+    font-size: 14px; 
+    font-weight: bold; 
+    margin: 0;
+    color: #666; 
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.pacote p {
+    font-size: 14px; 
+    color: #666; 
+    margin-top: 5px; 
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+.pacote-preco {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-top: 10px; 
+}
+
+.pacote-preco span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2a7f21;
+}
+
+.pacote-preco small {
+    color: #999;
+    margin-top: 2px; 
+}
+
+
+@media (max-width: 768px) {
+    .pacotes-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
